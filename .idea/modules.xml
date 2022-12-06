@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Sections/Sections.iml" filepath="$PROJECT_DIR$/Sections/Sections.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/javaProgramming.iml" filepath="$PROJECT_DIR$/.idea/javaProgramming.iml" />
     </modules>
   </component>
