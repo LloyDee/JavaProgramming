@@ -1,2 +1,2 @@
-# JavaBasics
-This project covers Section 1 to Section 5 of Udemy course Java Programming Masterclass updated to Java 17
+# JavaProgramming
+This project covers end - to - end Java Udemy course "Java Programming Masterclass updated to Java 17"
