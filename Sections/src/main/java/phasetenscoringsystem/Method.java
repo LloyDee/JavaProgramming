@@ -7,12 +7,7 @@ import java.util.Scanner;
 public class Method {
     private List<Player> players = new ArrayList<>();
     private final Scanner scanner = new Scanner(System.in);
-    private int PHASE = 2;
-
-    public Method() {
-        this.players.add(new Player("Tiger"));
-        this.players.add(new Player("Panther"));
-    }
+    private int PHASE = 10;
 
     public int getPHASE() {
         return PHASE;
@@ -34,22 +29,34 @@ public class Method {
         players.add(new Player(name));
     }
 
-    public void removePlayer() {
+    public void removePlayer(String name) {
+        players.remove(playerExist(name));
+    }
 
+    private Player playerExist(String name) {
+        Player player = null;
+        for(Player p : players){
+            if(name.equals(p.getName())){
+                player = p;
+                break;
+            }
+        }
+        return player;
     }
 
     public void changePlayer() {
 
     }
 
-    public void changeScore() {
-
+    public void changeScore(int score, String name) {
+        Player player = playerExist(name);
+        if (player!=null){
+            player.setScore(score);
+        }
     }
-
 
     public void settings() {
     }
-
 
     public int getTotalScore(Player player) {
         return player.getScore();

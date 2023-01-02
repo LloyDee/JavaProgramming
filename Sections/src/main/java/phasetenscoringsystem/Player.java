@@ -5,7 +5,7 @@ import java.util.List;
 public class Player {
     private String name;
     private int score;
-    private int phase;
+    private int phase = 1;
 
     public Player(String name) {
         this.name = name;
